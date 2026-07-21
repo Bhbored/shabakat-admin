@@ -1,12 +1,4 @@
-import {
-  LogOut,
-  MapPinned,
-  LayoutDashboard,
-  Users,
-  FileText,
-  Wallet,
-  Settings,
-} from "lucide-react";
+import { LogOut, LayoutDashboard, Building2, Settings } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { AppLogo } from "../../shared/components/AppLogo";
 import { Avatar } from "../../shared/components/Avatar";
@@ -14,10 +6,7 @@ import { useSidebar } from "../use-sidebar";
 
 const navigationItems = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { to: "/areas", label: "Areas", icon: MapPinned },
-  { to: "/subscribers", label: "Subscribers", icon: Users },
-  { to: "/invoices", label: "Invoices", icon: FileText },
-  { to: "/expenses", label: "Expenses", icon: Wallet },
+  { to: "/companies", label: "Companies", icon: Building2 },
   { to: "/settings", label: "Settings", icon: Settings },
 ];
 

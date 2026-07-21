@@ -8,21 +8,9 @@ const routeTitles: Record<string, { title: string; subtitle: string }> = {
     title: "Dashboard",
     subtitle: "All-time operations snapshot for Shabakat",
   },
-  "/areas": {
-    title: "Areas",
-    subtitle: "Organize subscriber groups and manage area assignments",
-  },
-  "/subscribers": {
-    title: "Subscribers",
-    subtitle: "Search, sort, and manage monthly accounts",
-  },
-  "/invoices": {
-    title: "Invoices",
-    subtitle: "Generate printable billing statements",
-  },
-  "/expenses": {
-    title: "Expenses",
-    subtitle: "Track fuel, maintenance, payroll, and other operating costs",
+  "/companies": {
+    title: "Companies",
+    subtitle: "Manage registered companies and their details",
   },
   "/settings": {
     title: "Settings",
