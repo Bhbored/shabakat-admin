@@ -1,10 +1,18 @@
-import { BrowserRouter } from "react-router-dom"
-import { AppRoutes } from "./routes/AppRoutes"
+import { BrowserRouter } from "react-router-dom";
+import { Toaster } from "sonner";
+import { AuthProvider } from "./providers/AuthProvider";
+import { QueryProvider } from "./providers/QueryProvider";
+import { AppRoutes } from "./routes/AppRoutes";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
-  )
+    <AuthProvider>
+      <QueryProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+        <Toaster richColors position="top-right" />
+      </QueryProvider>
+    </AuthProvider>
+  );
 }
